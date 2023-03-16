@@ -105,4 +105,4 @@ INSERT INTO `data_nilai` VALUES ('5', 'F13001', 'M1002', '88', '78', '75', '90')
 INSERT INTO `data_nilai` VALUES ('6', 'F11001', 'M1002', '81', '98', '90', '89');
 INSERT INTO `data_nilai` VALUES ('7', 'F12001', 'M3001', '90', '76', '78', '83');
 INSERT INTO `data_nilai` VALUES ('8', 'F13001', 'M1001', '77', '75', '75', '80');
-INSERT INTO `data_nilai` VALUES ('9', 'F11001', 'M3001', '85', '89', '98', '80')
+INSERT INTO `data_nilai` VALUES ('9', 'F11001', 'M3001', '85', '89', '98', '80');
