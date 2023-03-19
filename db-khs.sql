@@ -1,17 +1,5 @@
-/*
-Navicat MySQL Data Transfer
+-- Date: 2023-03-17 03:45:48
 
-Source Server         : koneksi
-Source Server Version : 50505
-Source Host           : localhost:3306
-Source Database       : db-khs
-
-Target Server Type    : MYSQL
-Target Server Version : 50505
-File Encoding         : 65001
-
-Date: 2023-03-17 03:45:48
-*/
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -31,7 +19,7 @@ CREATE TABLE `data_dosen` (
 -- ----------------------------
 -- Records of data_dosen
 -- ----------------------------
-INSERT INTO `data_dosen` VALUES ('1', 'M1001', 'Triadi');
+INSERT INTO `data_dosen` VALUES ('1', 'M1001', 'Triadi');   -- Auto increment = NULL
 INSERT INTO `data_dosen` VALUES ('2', 'M1002', 'Laksono');
 INSERT INTO `data_dosen` VALUES ('3', 'M3001', 'Putri');
 
