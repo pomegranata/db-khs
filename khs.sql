@@ -1,5 +1,6 @@
--- Date: 2023-03-17 03:45:48
-
+/*
+Date: 2023-03-24 00:06:58
+*/
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -8,7 +9,7 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `data_dosen`;
 CREATE TABLE `data_dosen` (
-  `ID_Dosen` int(3) NOT NULL AUTO_INCREMENT,
+  `ID_Dosen` int(3) NOT NULL AUTO_INCREMENT,    --auto increment = NULL
   `Kode` varchar(20) CHARACTER SET utf8mb4 DEFAULT NULL,
   `Dosen` varchar(35) CHARACTER SET utf8mb4 DEFAULT '',
   PRIMARY KEY (`ID_Dosen`),
@@ -19,9 +20,9 @@ CREATE TABLE `data_dosen` (
 -- ----------------------------
 -- Records of data_dosen
 -- ----------------------------
-INSERT INTO `data_dosen` VALUES ('1', 'M1001', 'Triadi');   -- Auto increment = NULL
-INSERT INTO `data_dosen` VALUES ('2', 'M1002', 'Laksono');
-INSERT INTO `data_dosen` VALUES ('3', 'M3001', 'Putri');
+INSERT INTO `data_dosen` VALUES ('1', 'M11001', 'Triadi');
+INSERT INTO `data_dosen` VALUES ('2', 'M12001', 'Laksono');
+INSERT INTO `data_dosen` VALUES ('3', 'M13001', 'Putri');
 
 -- ----------------------------
 -- Table structure for `data_mahasiswa`
@@ -54,14 +55,14 @@ CREATE TABLE `data_matkul` (
   `Jenis` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`ID_Matkul`,`Kode`),
   KEY `Kode` (`Kode`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of data_matkul
 -- ----------------------------
-INSERT INTO `data_matkul` VALUES ('1', 'M1001', 'Algoritma', 'Wajib');
-INSERT INTO `data_matkul` VALUES ('2', 'M1002', 'Pengadaan SDM', 'Wajib');
-INSERT INTO `data_matkul` VALUES ('3', 'M3001', 'Bahasa Indonesia', 'Pilihan');
+INSERT INTO `data_matkul` VALUES ('1', 'M11001', 'Algoritma', 'Wajib');
+INSERT INTO `data_matkul` VALUES ('2', 'M12001', 'Pengadaan SDM', 'Pilihan');
+INSERT INTO `data_matkul` VALUES ('3', 'M13001', 'Bahasa Indonesia', 'Wajib');
 
 -- ----------------------------
 -- Table structure for `data_nilai`
@@ -85,12 +86,12 @@ CREATE TABLE `data_nilai` (
 -- ----------------------------
 -- Records of data_nilai
 -- ----------------------------
-INSERT INTO `data_nilai` VALUES ('1', 'F11001', 'M1001', '85', '90', '76', '88');
-INSERT INTO `data_nilai` VALUES ('2', 'F12001', 'M1002', '87', '77', '98', '93');
-INSERT INTO `data_nilai` VALUES ('3', 'F13001', 'M3001', '85', '82', '94', '73');
-INSERT INTO `data_nilai` VALUES ('4', 'F12001', 'M1001', '83', '92', '90', '83');
-INSERT INTO `data_nilai` VALUES ('5', 'F13001', 'M1002', '88', '78', '75', '90');
-INSERT INTO `data_nilai` VALUES ('6', 'F11001', 'M1002', '81', '98', '90', '89');
-INSERT INTO `data_nilai` VALUES ('7', 'F12001', 'M3001', '90', '76', '78', '83');
-INSERT INTO `data_nilai` VALUES ('8', 'F13001', 'M1001', '77', '75', '75', '80');
-INSERT INTO `data_nilai` VALUES ('9', 'F11001', 'M3001', '85', '89', '98', '80');
+INSERT INTO `data_nilai` VALUES ('1', 'F11001', 'M11001', '85', '90', '76', '88');
+INSERT INTO `data_nilai` VALUES ('2', 'F12001', 'M12001', '87', '77', '98', '93');
+INSERT INTO `data_nilai` VALUES ('3', 'F13001', 'M13001', '85', '82', '94', '73');
+INSERT INTO `data_nilai` VALUES ('4', 'F12001', 'M11001', '83', '92', '90', '83');
+INSERT INTO `data_nilai` VALUES ('5', 'F13001', 'M12001', '88', '78', '75', '90');
+INSERT INTO `data_nilai` VALUES ('6', 'F11001', 'M12001', '81', '98', '90', '89');
+INSERT INTO `data_nilai` VALUES ('7', 'F12001', 'M13001', '90', '76', '78', '83');
+INSERT INTO `data_nilai` VALUES ('8', 'F13001', 'M11001', '77', '75', '75', '80');
+INSERT INTO `data_nilai` VALUES ('9', 'F11001', 'M13001', '85', '89', '98', '80');
