@@ -60,9 +60,9 @@ CREATE TABLE `data_matkul` (
 -- ----------------------------
 -- Records of data_matkul
 -- ----------------------------
-INSERT INTO `data_matkul` VALUES ('1', 'M11001', 'Algoritma', 'Wajib');
-INSERT INTO `data_matkul` VALUES ('2', 'M12001', 'Pengadaan SDM', 'Pilihan');
-INSERT INTO `data_matkul` VALUES ('3', 'M13001', 'Bahasa Indonesia', 'Wajib');
+INSERT INTO `data_matkul` VALUES ('1', 'M101', 'Algoritma', 'Wajib');
+INSERT INTO `data_matkul` VALUES ('2', 'M201', 'Pengadaan SDM', 'Pilihan');
+INSERT INTO `data_matkul` VALUES ('3', 'M301', 'Bahasa Indonesia', 'Wajib');
 
 -- ----------------------------
 -- Table structure for `data_nilai`
