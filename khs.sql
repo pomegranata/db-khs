@@ -20,9 +20,9 @@ CREATE TABLE `data_dosen` (
 -- ----------------------------
 -- Records of data_dosen
 -- ----------------------------
-INSERT INTO `data_dosen` VALUES ('1', 'M11001', 'Triadi');
-INSERT INTO `data_dosen` VALUES ('2', 'M12001', 'Laksono');
-INSERT INTO `data_dosen` VALUES ('3', 'M13001', 'Putri');
+INSERT INTO `data_dosen` VALUES ('1', 'M101', 'Triadi');
+INSERT INTO `data_dosen` VALUES ('2', 'M201', 'Laksono');
+INSERT INTO `data_dosen` VALUES ('3', 'M301', 'Putri');
 
 -- ----------------------------
 -- Table structure for `data_mahasiswa`
